@@ -8,5 +8,7 @@
   - name: print the information
     vars:
       COURSE: "Devops with Azure" # Task level-limited to that particular task
+      DURATION: "150HRS"
+      TRAINER: "Sivakumar"
     ansible.builtin.debug:
       msg: "Hi, I am learning {{COURSE}} Duration is: {{DURATION}} and trainer is: {{TRAINER}}"
