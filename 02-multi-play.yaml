@@ -1,5 +1,5 @@
 # play-1
-- name: ping the server
+- name: play-01
   hosts: web
   tasks:
   - name: ping the server
