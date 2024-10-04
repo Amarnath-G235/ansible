@@ -3,6 +3,6 @@
   vars_files:
   - vars.yaml
   tasks:
-  - name: import vars from files
+  - name: print the course info
     ansible.builtin.debug:
       msg: "Hi, I am learning {{COURSE}} Duration is: {{DURATION}} and trainer is: {{TRAINER}}"
