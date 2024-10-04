@@ -2,7 +2,17 @@
 - name: play-01
   hosts: web
   tasks:
-  - name: ping the server
+  - name: Play-01 Task-01
     ansible.builtin.debug:
-      msg: "This is from Play-01"
+      msg: "This is from Play-01 and Task-01"
+
+# play-2
+- name: play-02
+  hosts: web
+  tasks:
+  - name: Play-02 Task-02
+    ansible.builtin.debug:
+      msg: "This is from Play-02 and Task-02"
+ 
+
     
