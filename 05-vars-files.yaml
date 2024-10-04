@@ -1,6 +1,6 @@
 - name: Import variables from files
   hosts: web
-  vars_files:
+  vars_files: # The file location
   - vars.yaml
   tasks:
   - name: print the course info
