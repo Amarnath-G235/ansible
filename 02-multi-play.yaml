@@ -4,4 +4,4 @@
   tasks:
   - name: ping the server
     ansible.builtin.ping:
-    msg: "iam pinging the ansible server"
+      msg: "iam pinging the ansible server"
