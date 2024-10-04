@@ -6,5 +6,5 @@
     TRAINER: "Amarnath Gotru"
   tasks:
   - name: print the information
-    ansible.builtin.debug:
-    msg: "Hi, I am learning {{COURSE}} Duration is: {{DURATION}} and trainer is: {{TRAINER}}"
+      ansible.builtin.debug:
+      msg: "Hi, I am learning {{COURSE}} Duration is: {{DURATION}} and trainer is: {{TRAINER}}"
