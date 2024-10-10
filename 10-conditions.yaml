@@ -19,5 +19,5 @@
   - name: print this number if it is equal to 50
     ansible.builtin.debug:
       msg: "given number {{ number }} is equal to 50"
-    when: number | int = 50
+    when: number | int == 50
 
