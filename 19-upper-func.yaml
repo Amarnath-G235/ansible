@@ -14,4 +14,4 @@
 
   - name: convert default value into uppercase
     ansible.builtin.debug:
-      msg: "hello {{ name | default ('amarnath') | upper }}"
+      msg: "hello {{ name | default ('amarnath') | upper }} | upper "
