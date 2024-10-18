@@ -1,0 +1,14 @@
+- name: grocery items
+  hosts: local
+  connection: local
+  vars: 
+    grocery:
+      item1: ricebag
+      item2: cooking oil
+      item3: vegetables
+      item4: snacks
+      item5: softdrinks
+  tasks:
+  - name: convert grocery items from map to list
+    ansible.builtin.debug:
+      msg: "{{ grocery | dict2items }}"
