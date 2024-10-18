@@ -8,4 +8,4 @@
   
   - name: print the name 
     ansible.builtin.debug:
-      msg: "Hello {{ name }}"
+      msg: "Hello {{ name | default ('amarnath')}}"
