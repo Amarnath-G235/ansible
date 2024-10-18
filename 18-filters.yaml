@@ -1,6 +1,8 @@
 - name: Filters/Functions
   hosts: local
   connection: local
+  vars:
+    numbers: [1,1,22,1,33,45,7,8,910,2,6,5,33,56,44]
   tasks:
   - name: print the default variable
     ansible.builtin.debug:
@@ -9,3 +11,8 @@
   - name: print the name 
     ansible.builtin.debug:
       msg: "Hello {{ name | default ('amarnath')}}"
+  
+  - name: print the unique values
+    ansible.builtin.debug:
+      msg: "{{ numbers | unique }}" 
+  
