@@ -7,3 +7,7 @@
   - name: convert string into uppercase
     ansible.builtin.debug:
       msg: "{{ greeting | upper }}"
+
+  - name: convert string into lowercase
+    ansible.builtin.debug:
+      msg: "{{ greeting | lower }}"
