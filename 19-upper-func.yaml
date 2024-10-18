@@ -1,0 +1,9 @@
+- name: usage of upper function
+  hosts: local
+  connection: local
+  vars:
+    greeting: "Hello amarnath"
+  tasks:
+  - name: convert string into uppercase
+    ansible.builtin.debug:
+      msg: "{{ greeting | upper }}"
