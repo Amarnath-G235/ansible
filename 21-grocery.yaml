@@ -11,4 +11,4 @@
   tasks:
   - name: convert grocery items from map to list
     ansible.builtin.debug:
-      msg: "{{ grocery | dict2items }}"
+      msg: "{{ grocery | items2dict }}"
